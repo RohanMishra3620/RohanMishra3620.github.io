@@ -98,7 +98,7 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 0 5%;
     margin-top: 0%;
     margin-bottom: -150px;
