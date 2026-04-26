@@ -14,26 +14,44 @@
 </head>
 
 <body id="home">
-    <header class="heade">
+    <header class="header">
         <nav>
-            <div class="left">Rohan's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#certificate">Certificates</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
+            <ul class="sidebar">
+                <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certificate">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+
+
+            <ul>
+                <div class="left">Rohan's Portfolio</div>
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#certificate">Certificates</a></li>
+                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact Me</a></li>
+                <li class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+
         </nav>
     </header>
 
     <main>
         <section class="firstsection">
             <div class="leftsection">
-                Hi, my name is <span class="purple">Rohan</span>
-                <div>and I am a passionate</div>
+                Hi, I'm <span class="purple">Rohan</span>
+                <div>I build data-driven solutions as a</div>
                 <span id="element"></span>
                 <div class="buttons">
                     <a href="https://github.com/Rohan3620" target="_blank">
@@ -52,18 +70,19 @@
         <hr>
 
         <section class="Secondsection">
-            <span class="grey">Explore My Coding Journey</span>
-            <h1>Coding Journey</h1>
+            <h2 class="grey">Explore My</h2>
+            <h1>Learning Path</h1>
             <div class="box">
                 <div class="vertical">
                     <img src="assets/images/Devloper.png" alt="Developer icon" class="image-top">
                     <div class="vertical-text">July 2024 - Dec 2024</div>
                     <div class="vertical-desc">
-                        Took my first steps into the world of programming with <strong>C Language</strong>, mastering
-                        the fundamentals of logic and problem-solving.
-                        Alongside, I explored the creative side of tech — learning <strong>HTML, CSS, and
-                            JavaScript</strong> to build interactive web pages.
-                        Completed <em>2+ frontend projects</em> that boosted my confidence in web development.
+                        <ul>
+                            <li> Started with C programming basics </li>
+                            <li>Built frontend projects</li>
+                            <li>Learned HTML, CSS, JavaScript</li>
+                        </ul>
+
                     </div>
                 </div>
 
@@ -71,11 +90,11 @@
                     <img src="assets/images/Java.png" alt="Developer icon" class="image-top">
                     <div class="vertical-text">Dec 2024 - June 2025</div>
                     <div class="vertical-desc">
-                        Transitioned into backend and core development by diving into <strong>Java</strong> with a focus
-                        on <strong>Object-Oriented Programming (OOP)</strong>.
-                        Strengthened my data management knowledge through <strong>SQL</strong> and practiced <strong>DSA
-                            in C</strong> to improve my coding logic.
-                        This phase shaped my understanding of real-world software structures.
+                        <ul>
+                            <li>Learned Java & OOP</li>
+                            <li>Practiced DSA (C + Java)</li>
+                            <li>Worked with SQL & databases</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -83,13 +102,17 @@
                     <img src="assets/images/Python.png" alt="Developer icon" class="image-top">
                     <div class="vertical-text">July 2025 - Present</div>
                     <div class="vertical-desc">
-                        Currently upskilling in <strong>Python for data analysis</strong> — working with libraries like
-                        <code>pandas</code> and <code>matplotlib</code>.
-                        Created <em>2 Python-based projects</em> focused on data insights.
-                        Solving <strong>LeetCode DSA problems</strong> regularly and enrolled in a professional
-                        <strong>Data Analyst course</strong> to refine analytical thinking.
+                        <ul>
+                            <li> Python for Data Analysis </li>
+                            <li>Built data-driven projects</li>
+                            <li>Learning Machine Learning</li>
+                            <li>Practicing real-world datasets</li>
+                        </ul>
                     </div>
                 </div>
+                <p class="journey-note">
+                    Focused on building data-driven projects and preparing for internships.
+                </p>
             </div>
         </section>
         <hr>
@@ -102,74 +125,58 @@
                 <img src="assets/images/Aboutme.webp" alt="Rohan photo or illustration" />
             </div>
             <div class="about-right">
-                <p>Hello! I'm <strong>Rohan Mishra</strong>, a passionate programmer and aspiring <strong>Java + Data
-                        Analyst</strong> professional.</p>
-                <p>I began my coding journey in 2024 and have built skills in <strong>Frontend Web Development</strong>,
-                    <strong>OOP in Java</strong>, and am currently diving deep into <strong>Python for data
-                        analysis</strong>.
+                <p>
+                    Hello! I'm <strong>Rohan Mishra</strong>, a passionate programmer and aspiring
+                    <strong>Data Analyst</strong> with a growing interest in data-driven technologies.
                 </p>
-                <p>Whether it's solving DSA problems on LeetCode or crafting clean, user-friendly websites — I love
-                    transforming ideas into digital reality. 💻</p>
-                <p>Beyond tech, I'm a curious learner, always exploring new ways to grow and create impact. 🌱</p>
+
+                <p>
+                    I began my coding journey in 2024 and have built skills in
+                    <strong>Frontend Web Development</strong>, <strong>Object-Oriented Programming in Java</strong>,
+                    and I am currently focusing on <strong>Python for data analysis</strong>.
+                </p>
+
+                <p>
+                    Whether it's solving DSA problems on LeetCode or building clean, user-friendly websites —
+                    I enjoy turning ideas into practical and meaningful digital solutions. 💻
+                </p>
+
+                <p>
+                    Beyond tech, I am a curious learner who continuously explores new concepts
+                    and strives to grow while creating a positive impact. 🌱
+                </p>
             </div>
         </div>
     </section>
+
     <section id="projects" class="projects-section">
         <h1>Projects</h1>
         <div id="subheading">Explore My Coding Journey</div>
         <div class="projects-container">
-
             <div class="project-card">
-                <img src="assets/images/Project2.png" alt="Frontend Static Design" class="project-img"
-                    onclick="toggleDesc('desc2')">
-                <div class="project-desc" id="desc2">
-                    <h3>Frontend Static Design (HTML, CSS)</h3>
-                    <p>A clean and responsive static webpage layout featuring custom styling and visual sections.</p>
-                    <a href="https://github.com/Rohan3620/Front_design_Fewer" target="_blank">🔗 Source Code</a><br>
-                    <a href="https://rohan3620.github.io/Front_design_Fewer/" target="_blank">🌐 Live Demo</a>
-                </div>
-            </div>
+                <img src="assets/images/Project1.png" alt="MindTech ML Project" class="project-img"
+                    onclick="toggleDesc('desc6')">
 
-            <div class="project-card">
-                <img src="assets/images/Project4.png" alt="Carbon Footprint Calculator" class="project-img"
-                    onclick="toggleDesc('desc4')">
-                <div class="project-desc" id="desc4">
-                    <h3>Carbon Footprint Calculator (HTML, CSS, JavaScript)</h3>
-                    <p>Calculate your daily carbon footprint based on travel, electricity, and food usage.</p>
-                    <a href="https://github.com/Rohan3620/Carbon_Calculator" target="_blank">🔗 Source Code</a><br>
-                    <a href="https://rohan3620.github.io/Carbon_Calculator/" target="_blank">🌐 Live Demo</a>
-                </div>
-            </div>
+                <div class="project-desc" id="desc6">
+                    <h3>MindTech - Mental Health Prediction (ML Project)</h3>
 
-            <div class="project-card">
-                <img src="assets/images/Project1.png" alt="Static Website" class="project-img"
-                    onclick="toggleDesc('desc1')">
-                <div class="project-desc" id="desc1">
-                    <h3>Static Web Page</h3>
-                    <p>Designed a clean and responsive static web page using Flexbox and media queries.</p>
-                    <a href="https://github.com/Rohan3620/Front_Design" target="_blank">🔗 Source Code</a><br>
-                    <a href="https://rohan3620.github.io/Front_Design/" target="_blank">🌐 Live Demo</a>
-                </div>
-            </div>
+                    <p>
+                        A Machine Learning-based project designed to predict mental health conditions
+                        using data analysis and predictive modeling. This project helps in early
+                        identification of mental health risks.
+                    </p>
 
-            <div class="project-card">
-                <img src="assets/images/Project3.png" alt="3D Calculator" class="project-img"
-                    onclick="toggleDesc('desc3')">
-                <div class="project-desc" id="desc3">
-                    <h3>3D Calculator (HTML, CSS, JavaScript)</h3>
-                    <p>A stylish 3D-themed calculator built with HTML, CSS, and JavaScript.</p>
-                    <a href="https://github.com/Rohan3620/Calculator" target="_blank">🔗 Source Code</a><br>
-                    <a href="https://rohan3620.github.io/Calculator/" target="_blank">🌐 Live Demo</a>
-                </div>
-            </div>
+                    <p>
+                        <strong>Tech Stack:</strong> Python, Pandas, NumPy, Scikit-learn, XGBoost, Power BI, Flask
+                    </p>
 
-            <div class="project-card">
-                <img src="assets/images/Project5.png" alt="Snake Game" class="project-img"
-                    onclick="toggleDesc('desc5')">
-                <div class="project-desc" id="desc5">
-                    <h3>Snake & Ice Gun Game (Python)</h3>
-                    <p>A classic snake game with a fun twist using Python’s <code>pygame</code>.</p>
-                    <a href="https://github.com/Rohan3620/Python/tree/main/Project1" target="_blank">🔗 Source Code</a>
+                    <a href="https://github.com/RohanMishra3620/MindTech" target="_blank">
+                        🔗 Source Code
+                    </a>
+                    <br><br>
+                    <a href="https://mind-tech--rohanmishra023.replit.app/#screen" target="_blank">
+                        🚀 Live Demo
+                    </a>
                 </div>
             </div>
 
@@ -187,8 +194,6 @@
         </div>
     </section>
 
-
-
     <section id="certificate" class="certificate-section">
         <h1>Certificates</h1>
         <div id="subheading">Explore My Certificates</div>
@@ -205,10 +210,12 @@
             </div>
 
             <div class="certificate-card">
-                <img src="assets/images/Deloitte.png" alt="Deloitte Certificate" class="certificate-img" onclick="openModal(this)">
+                <img src="assets/images/Deloitte.png" alt="Deloitte Certificate" class="certificate-img"
+                    onclick="openModal(this)">
             </div>
             <div class="certificate-card">
-                <img src="assets/images/DUCATE.jpg" alt="DUCATE Certificate" class="certificate-img" onclick="openModal(this)">
+                <img src="assets/images/DUCATE.jpg" alt="DUCATE Certificate" class="certificate-img"
+                    onclick="openModal(this)">
             </div>
 
         </div>
@@ -261,7 +268,8 @@
             <a href="https://github.com/Rohan3620" target="_blank">
                 <button class="btn">Github</button>
             </a>
-            <a href="https://www.linkedin.com/in/rohan-mishra-757b33265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <a href="https://www.linkedin.com/in/rohan-mishra-757b33265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank">
                 <button class="btn">LinkedIn</button>
             </a>
             <a href="https://leetcode.com/u/Rohan3620/" target="_blank">
@@ -294,16 +302,24 @@
                 © 2025 All Rights Reserved | Rohan Mishra
             </div>
         </footer>
+        <script>
+            function showsidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
 
+            function hidesidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script>
             var typed = new Typed('#element', {
                 strings: [
-                    'Frontend Developer',
-                    'Java Developer',
-                    'C Programmer',
-                    'Python Developer',
-                    'Data Analyst'
+                    'Data Science Enthusiast',
+                    'Python & Pandas Developer',
+                    'Aspiring ML Engineer'
                 ],
                 typeSpeed: 50,
             });
@@ -315,6 +331,7 @@
             }
         </script>
         <script>
+
             function openModal(img) {
                 const modal = document.getElementById("imageModal");
                 const modalImg = document.getElementById("modalImage");
